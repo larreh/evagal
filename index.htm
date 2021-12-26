@@ -17,11 +17,11 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                            data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                            data-mdb-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarExample01">
+                        <div class="collapse navbar-collapse" id="navbarTop">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item active">
                                     <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -37,23 +37,15 @@
                     </div>
                 </nav>
                 <!-- Navbar -->
-                <h1>Event Aging Alerts</h1>
+                <h1 class='pb-3'>Event Aging Alerts</h1>
             </header>
 
-            <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                </ul>
-            </div>
-
-            <div>
-                &nbsp;
+            <div class="card w-50">
+                <ul id="events" class="list-group list-group-flush"></ul>
             </div>
 
             <footer>
-                <ul class="list-inline text-uppercase fs-6">
+                <ul class="list-inline text-uppercase text-muted fs-6 pt-3 w-auto">
                     <li class="list-inline-item">Footer</li>
                     <li class="list-inline-item">Supreme</li>
                     <li class="list-inline-item">Footer</li>
@@ -62,16 +54,17 @@
             </footer>
         </main>
     </div>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/evagal.data.js"></script>
     <script src="./js/evagal.js"></script>
     <script>
         'use strict;'
-        window.addEventListener('load', (event) => {
-            for (let i = 0; i < events.length; i++) {
-                console.log(events[i].name + ', ' + events[i].begin.toLocaleDateString() + ', ' + events[i].end.toLocaleDateString())
-            }
-        });
+        // window.addEventListener('load', (event) => {
+        //     for (let i = 0; i < events.length; i++) {
+        //         console.log(events[i].name + ', ' + events[i].begin.toLocaleDateString() + ', ' + events[i].end.toLocaleDateString())
+        //     }
+        // });
     </script>
 </body>
 
