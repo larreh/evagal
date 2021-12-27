@@ -10,6 +10,11 @@ window.addEventListener('load', (event) => {
         return `${event.name}, ${dateInfo}`
     }
 
+    // sort event list
+    events.sort((a, b) => {
+        return a.begin.getTime() - b.begin.getTime()
+    })
+
     // build event list
     events.forEach(event => {
         let txt = document.createTextNode(eventDesc(event))
