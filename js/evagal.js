@@ -6,7 +6,7 @@ window.addEventListener('load', (event) => {
         let dateInfo = event.begin.getTime() === event.end.getTime() ?
             event.begin.toLocaleDateString() :
             `${event.begin.toLocaleDateString()} to ${event.end.toLocaleDateString()}`
-            
+
         return `${event.name}, ${dateInfo}`
     }
 
@@ -22,6 +22,7 @@ window.addEventListener('load', (event) => {
         let ul = document.getElementById('events')
 
         li.classList.add('list-group-item')
+        li.classList.add('list-group-item-action')
         li.appendChild(txt)
         ul.appendChild(li)
     })

@@ -10,49 +10,55 @@
 </head>
 
 <body>
-    <div class="container">
-        <main>
-            <header>
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                            data-mdb-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarTop">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Events</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <!-- Navbar -->
-                <h1 class='pb-3'>Event Aging Alerts</h1>
-            </header>
 
-            <div class="card w-50">
-                <ul id="events" class="list-group list-group-flush"></ul>
+
+    <div class='container'>
+
+        <header class="pt-3">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="false">Home</button>
+                    <button class="nav-link active" id="nav-events-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-events" type="button" role="tab" aria-controls="nav-events"
+                        aria-selected="true">Events</button>
+                    <button class="nav-link" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                        type="button" role="tab" aria-controls="nav-about" aria-selected="false">About</button>
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+            <div class="tab-content pt-3" id="nav-tabContent">
+                <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...
+                </div>
+                <div class="tab-pane fade show active" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <ul id="events" class="list-group list-group-flush"></ul>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">...</div>
             </div>
 
-            <footer>
-                <ul class="list-inline text-uppercase text-muted fs-6 pt-3 w-auto">
-                    <li class="list-inline-item">Footer</li>
-                    <li class="list-inline-item">Supreme</li>
-                    <li class="list-inline-item">Footer</li>
-                    <li class="list-inline-item">Supreme</li>
-                </ul>
-            </footer>
+
+
         </main>
+
+        <footer>
+            <ul class="list-inline text-uppercase text-muted pt-4 w-auto">
+                <li class="list-inline-item">Footer</li>
+                <li class="list-inline-item">Supreme</li>
+                <li class="list-inline-item">Footer</li>
+                <li class="list-inline-item">Supreme</li>
+            </ul>
+        </footer>
     </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
@@ -61,7 +67,7 @@
     <script>
         'use strict;'
         window.addEventListener('load', (event) => {
-            
+
         });
     </script>
 </body>
